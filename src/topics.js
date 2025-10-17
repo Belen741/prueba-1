@@ -35,6 +35,62 @@ export const topics = [
       'Un vocabulario rico permite matizar tus ideas y elegir palabras que se adapten a cada situación comunicativa.',
     example:
       'Aprende estas expresiones: "dar el brazo a torcer" (ceder), "ir al grano" (ser directo) y "estar en las nubes" (distraerse). Úsalas en oraciones propias.',
+    sections: [
+      {
+        title: 'Vocabulario para enfermeras',
+        description:
+          'Expresiones útiles para hablar con pacientes y coordinarse con el equipo de salud.',
+        items: [
+          {
+            term: 'Signos vitales',
+            definition:
+              'Conjunto de mediciones como presión arterial, pulso y temperatura que permiten evaluar el estado del paciente.',
+          },
+          {
+            term: 'Historia clínica',
+            definition:
+              'Registro de antecedentes médicos, tratamientos y alergias que guía la atención del paciente.',
+          },
+          {
+            term: 'Administrar medicamentos',
+            definition:
+              'Acción de preparar y entregar fármacos siguiendo la dosis, vía y horario prescritos.',
+          },
+          {
+            term: 'Ingreso hospitalario',
+            definition:
+              'Proceso mediante el cual un paciente es admitido para recibir cuidados continuos en un hospital.',
+          },
+        ],
+      },
+      {
+        title: 'Vocabulario para contadores',
+        description:
+          'Términos frecuentes al preparar informes financieros y asesorar a clientes.',
+        items: [
+          {
+            term: 'Estado de resultados',
+            definition:
+              'Informe que resume ingresos, costos y utilidades de un periodo contable.',
+          },
+          {
+            term: 'Conciliación bancaria',
+            definition:
+              'Comparación entre el registro contable y el estado de cuenta del banco para identificar diferencias.',
+          },
+          {
+            term: 'Depreciación',
+            definition:
+              'Reconocimiento contable de la pérdida de valor de un activo a lo largo del tiempo.',
+          },
+          {
+            term: 'Flujo de efectivo',
+            definition:
+              'Registro de entradas y salidas de dinero que permite evaluar la liquidez de la empresa.',
+          },
+        ],
+      },
+    ],
     steps: [
       'Agrupa nuevas palabras en categorías temáticas como trabajo, viajes o emociones.',
       'Escribe tarjetas con definiciones y sinónimos para repasarlas a diario.',

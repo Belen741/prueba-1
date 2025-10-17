@@ -43,6 +43,26 @@ function App() {
             <p>{selectedTopic.example}</p>
           </article>
 
+          {selectedTopic.sections?.length ? (
+            <section className="app__content-sections" aria-label="Secciones temáticas">
+              {selectedTopic.sections.map((section) => (
+                <article key={section.title} className="app__content-section">
+                  <h3>{section.title}</h3>
+                  {section.description ? <p>{section.description}</p> : null}
+                  {section.items?.length ? (
+                    <ul>
+                      {section.items.map((item) => (
+                        <li key={item.term}>
+                          <strong>{item.term}:</strong> {item.definition}
+                        </li>
+                      ))}
+                    </ul>
+                  ) : null}
+                </article>
+              ))}
+            </section>
+          ) : null}
+
           <section className="app__content-steps" aria-label="Pasos sugeridos">
             <h3>Cómo practicar</h3>
             <ol>

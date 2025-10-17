@@ -127,16 +127,36 @@ body {
 }
 
 .app__content-example,
-.app__content-steps {
+.app__content-steps,
+.app__content-sections,
+.app__content-section {
   display: grid;
   gap: 0.75rem;
 }
 
 .app__content-example h3,
-.app__content-steps h3 {
+.app__content-steps h3,
+.app__content-section h3 {
   font-size: 1.15rem;
   color: #2d2d44;
   margin: 0;
+}
+
+.app__content-sections {
+  gap: 1.25rem;
+}
+
+.app__content-section ul {
+  margin: 0;
+  padding-left: 1.25rem;
+  display: grid;
+  gap: 0.55rem;
+  color: #3b3b5e;
+  line-height: 1.6;
+}
+
+.app__content-section li strong {
+  color: #1f1f3b;
 }
 
 .app__content-steps ol {
