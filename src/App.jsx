@@ -175,21 +175,29 @@ function App() {
 
           {selectedTopic.sections?.length ? (
             <section className="app__content-sections" aria-label="Secciones temáticas">
-              {selectedTopic.sections.map((section) => (
-                <article key={section.title} className="app__content-section">
-                  <h3>{section.title}</h3>
-                  {section.description ? <p>{section.description}</p> : null}
-                  {section.items?.length ? (
-                    <ul>
-                      {section.items.map((item) => (
-                        <li key={item.term}>
-                          <strong>{item.term}:</strong> {item.definition}
-                        </li>
-                      ))}
-                    </ul>
-                  ) : null}
-                </article>
-              ))}
+              {selectedTopic.sections.map((section) => {
+                const sectionClasses = ['app__content-section'];
+
+                if (section.variant) {
+                  sectionClasses.push(`app__content-section--${section.variant}`);
+                }
+
+                return (
+                  <article key={section.title} className={sectionClasses.join(' ')}>
+                    <h3>{section.title}</h3>
+                    {section.description ? <p>{section.description}</p> : null}
+                    {section.items?.length ? (
+                      <ul>
+                        {section.items.map((item) => (
+                          <li key={item.term}>
+                            <strong>{item.term}:</strong> {item.definition}
+                          </li>
+                        ))}
+                      </ul>
+                    ) : null}
+                  </article>
+                );
+              })}
             </section>
           ) : null}
 

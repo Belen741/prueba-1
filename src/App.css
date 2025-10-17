@@ -231,6 +231,17 @@ body {
   margin: 0;
 }
 
+.app__content-section--reading-highlight {
+  border-left: 4px solid #22c55e;
+  padding-left: 1rem;
+}
+
+.app__content-section--reading-highlight h3 {
+  color: #15803d;
+  font-weight: 700;
+  text-transform: lowercase;
+}
+
 .app__content-sections {
   gap: 1.25rem;
 }
