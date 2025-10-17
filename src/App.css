@@ -134,6 +134,95 @@ body {
   gap: 0.75rem;
 }
 
+.app__vocabulary {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.app__vocabulary-groups {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.app__vocabulary-group-button,
+.app__vocabulary-level-button {
+  border-radius: 999px;
+  border: 1px solid rgba(99, 102, 241, 0.2);
+  background: rgba(226, 232, 255, 0.45);
+  color: #312e81;
+  font-weight: 600;
+  padding: 0.5rem 1.25rem;
+  cursor: pointer;
+  transition: transform 150ms ease, box-shadow 150ms ease, border-color 150ms ease,
+    background 150ms ease;
+}
+
+.app__vocabulary-group-button:hover,
+.app__vocabulary-group-button:focus-visible,
+.app__vocabulary-level-button:hover,
+.app__vocabulary-level-button:focus-visible {
+  transform: translateY(-1px);
+  border-color: rgba(99, 102, 241, 0.4);
+  background: rgba(199, 210, 254, 0.65);
+  box-shadow: 0 12px 30px -18px rgba(79, 70, 229, 0.4);
+  outline: none;
+}
+
+.app__vocabulary-group-button--active,
+.app__vocabulary-level-button--active {
+  border-color: rgba(79, 70, 229, 0.7);
+  background: linear-gradient(135deg, rgba(79, 70, 229, 0.22), rgba(165, 180, 252, 0.35));
+  color: #1f1f3b;
+  box-shadow: 0 16px 35px -20px rgba(79, 70, 229, 0.45);
+}
+
+.app__vocabulary-panel {
+  display: grid;
+  gap: 1.25rem;
+}
+
+.app__vocabulary-description,
+.app__vocabulary-level-description {
+  margin: 0;
+  color: #3b3b5e;
+  line-height: 1.6;
+}
+
+.app__vocabulary-levels {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.app__vocabulary-level {
+  display: grid;
+  gap: 0.75rem;
+  padding: 1.25rem;
+  border-radius: 18px;
+  border: 1px solid rgba(99, 102, 241, 0.15);
+  background: rgba(248, 250, 255, 0.75);
+}
+
+.app__vocabulary-level h3 {
+  margin: 0;
+  font-size: 1.1rem;
+  color: #2d2d44;
+}
+
+.app__vocabulary-level ul {
+  margin: 0;
+  padding-left: 1.25rem;
+  display: grid;
+  gap: 0.55rem;
+  color: #3b3b5e;
+  line-height: 1.6;
+}
+
+.app__vocabulary-level li strong {
+  color: #1f1f3b;
+}
+
 .app__content-example h3,
 .app__content-steps h3,
 .app__content-section h3 {
@@ -187,5 +276,11 @@ body {
 
   .app__topic-button {
     min-width: 220px;
+  }
+
+  .app__vocabulary-groups,
+  .app__vocabulary-levels {
+    flex-direction: column;
+    align-items: stretch;
   }
 }
