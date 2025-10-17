@@ -12,7 +12,7 @@ function App() {
   return (
     <div className="app">
       <header className="app__header">
-        <h1>Guía rápida de estudio</h1>
+        <h1>Guía rápida de estudio 2</h1>
         <p>Selecciona un tema para ver una explicación breve y un ejemplo práctico.</p>
       </header>
 
