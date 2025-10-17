@@ -21,6 +21,12 @@ export const topics = [
       'La lectura comprensiva entrena tu capacidad para inferir información, reconocer argumentos y ampliar el vocabulario en contexto.',
     example:
       'Lee este fragmento: "El avance tecnológico redefine la forma en que nos relacionamos, pero también exige nuevas habilidades". Identifica la idea principal y dos detalles que la respalden.',
+    sections: [
+      {
+        title: 'hay que leer mucho',
+        variant: 'reading-highlight',
+      },
+    ],
     steps: [
       'Subraya palabras desconocidas y deduce su significado a partir del contexto inmediato.',
       'Resume el texto en dos oraciones que conserven la idea principal.',
